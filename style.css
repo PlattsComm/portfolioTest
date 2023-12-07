@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+}
+
+
+
+/* ERROR CSS COMMENT */	
+/* --------------------START EDITING HERE-------   */
+
+
+
+body {
+	font-size: 16px;
+	background-image: url('images/pexels-magnus-flechsenhaar-6555936.jpg');
+	background-repeat: repeat;
+}
+
+#centeredContent{
+	text-align: center;
+	margin: 0px auto;
+	width: 80%;
+	background-color: white;
+}
+
+.fix{
+	clear: both;
+}
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+/*-------------- TYPE CONTENT -------------------*/
+
+
+
+h1, p {
+	color: #ffffff;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.5);
+}
+
+@font-face{
+	font-family: 'aArang';
+	src: url('fonts/aArang.ttf');
+}
+
+h1, h2{
+	font-family: 'aArang', Verdana, Arial, sans-serif;
+}
+
+h3, h4, h5, h6, p{
+	font-family: 'Roboto', Verdana, Arial, sans-serif;
+}
+
+h1 a{
+	font-size: 400%;
+	/*float: right;
+	width: 50%;*/
+	color: white;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+h2{
+	font-size: 300%;
+	text-align: center;
+	margin: 0px auto;/* use text-align center and margin 0px auto together to center elements */
+}
+
+h3{
+	font-size: 200%;
+	color: white;
+}
+
+h4{
+	font-size: 180%;
+}
+
+h5{
+	font-size: 160%;
+	background-color: orange;
+	border: 1px solid black;
+	width: 33%;
+	float: left;
+}
+
+h6{
+	font-size: 140%;
+}
+
+p{
+	font-size: 100%;
+}
+
+
+
+/*-------------- HEADER CONTENT -------------------*/
+
+
+
+
+header{
+	background-color: black;
+	padding: 10px 0px;
+	width: 100%;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.thumbImage{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+#topNav{
+	width: 50%;
+	/*float: left;*/
+}
+
+.red{
+	display: inline-block;
+	/*background-color: red;*/
+	padding: 10px;
+	margin: 10px;
+}
+
+.green{
+	display: inline-block;
+	/*background-color: green;*/
+	padding: 10px;
+	margin: 10px;
+}
+
+.center{
+	text-align: center;
+	margin: 0px auto;
+}
+
+img.imgSm{
+	width: 31.5%;
+	height: auto;
+	border: 10px solid white;
+}
+
+img.imgLG{
+	width: 100%;
+	height: auto;
+}
+
+ul li a{
+	font-family: 'Roboto', Verdana, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/*-------------- HOMEPAGE CONTENT -------------------*/
+
+
+table{
+	background-color: black;
+	color: white;
+	border-spacing: 10px;
+	border: 1px solid white;
+}
+
+
+th{
+	border: 1px solid white;
+	padding:10px;
+	font-family: 'Roboto', Verdana, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 130%;
+}
+
+#centerVert{
+	position: relative;
+	top: 22px;
+}
+
+
+.space{
+	width: 80%;
+	overflow: auto;
+	padding: 10%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#portfolio{
+	background-color: red;
+}
+
+#aboutMe{
+	background-color: green;
+}
+
+#resume{
+	background-color: blue;
+}
+
+.twoColumn{
+	width: 30%;
+	margin: 0% 10%;
+	/*float: left;*/
+	background-color: yellow;
+}
+
+
+
+/*NEED TO ADD CSS for FORM*/
+
+
+/*------------------------ FOOTER -------------------*/
+
+
+footer{
+	width: 100%;
+	height: 100px;
+	padding: 20px 0px;
+	background-color: black;
+}
+
